@@ -22,4 +22,13 @@ def division():
     second = int(input('What is your second number? '))
     print(first / second)
 
-division()
+
+
+
+def modulo():
+    first = int(input('What is your first number? '))
+    second = int(input('What is your second number? '))
+    print(first % second)
+
+
+modulo()
