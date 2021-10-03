@@ -31,4 +31,24 @@ def modulo():
     print(first % second)
 
 
-modulo()
+def calc_run():
+    op = input('add, subtract, multiply, divide, or modulo? ')
+    if op == 'add':
+        addition()
+    elif op == 'subtract':
+        subtraction()
+    elif op == 'multiply':
+        multiplication()
+    elif op == 'divide':
+        division()
+    elif op == 'modulo':
+        modulo()
+    else:
+        print('Thank you. Goodbye')
+
+
+
+
+
+
+calc_run()
