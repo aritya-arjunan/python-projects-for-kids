@@ -8,28 +8,15 @@ def subtraction():
     second = int(input('What is your second number? '))
     print(first - second)
 
-
-
 def multiplication():
     first = int(input('What is your first number? '))
     second = int(input('What is your second number? '))
     print(first * second)
 
-
-
 def division():
     first = int(input('What is your first number? '))
     second = int(input('What is your second number? '))
     print(first / second)
-
-
-
-
-def modulo():
-    first = int(input('What is your first number? '))
-    second = int(input('What is your second number? '))
-    print(first % second)
-
 
 def calc_run():
     op = input('add, subtract, multiply, divide, or modulo? ')
@@ -46,9 +33,10 @@ def calc_run():
     else:
         print('Thank you. Goodbye')
 
-
-
-
+def modulo():
+    first = int(input('What is your first number? '))
+    second = int(input('What is your second number? '))
+    print(first % second)
 
 
 calc_run()
