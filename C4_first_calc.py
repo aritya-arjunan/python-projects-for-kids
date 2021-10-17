@@ -1,3 +1,4 @@
+
 def addition():
     first = int(input('What is your first number? '))
     second = int(input('What is your second number? '))
@@ -18,11 +19,22 @@ def division():
     second = int(input('What is your second number? '))
     print(first / second)
 
+def modulo():
+    first = int(input('What is your first number? '))
+    second = int(input('What is your second number? '))
+    print(first % second)
+
+calc_on = 1
+
+def quit():
+    global calc_on
+    calc_on = 0
+
 def calc_run():
-    op = input('add, subtract, multiply, divide, or modulo? ')
+    op = input('add, subtract, multiply, divide, or modulo, quit?')
     if op == 'add':
         addition()
-    elif op == 'subtract':
+    elif op == 'subtract':                                              
         subtraction()
     elif op == 'multiply':
         multiplication()
@@ -31,12 +43,8 @@ def calc_run():
     elif op == 'modulo':
         modulo()
     else:
-        print('Thank you. Goodbye')
+        quit()
 
-def modulo():
-    first = int(input('What is your first number? '))
-    second = int(input('What is your second number? '))
-    print(first % second)
+while calc_on == 1:
+    calc_run()
 
-
-calc_run()
